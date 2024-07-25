@@ -15,3 +15,39 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+
+demo-devops-java/HELP.md
+demo-devops-java/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+demo-devops-java/test.mv.db
+
+### STS ###
+demo-devops-java/.apt_generated
+demo-devops-java/.classpath
+demo-devops-java/.factorypath
+demo-devops-java/.project
+demo-devops-java/.settings
+demo-devops-java/.springBeans
+demo-devops-java/.sts4-cache
+
+### IntelliJ IDEA ###
+demo-devops-java/.idea
+demo-devops-java/*.iws
+demo-devops-java/*.iml
+demo-devops-java/*.ipr
+
+### NetBeans ###
+demo-devops-java//nbproject/private/
+demo-devops-java//nbbuild/
+demo-devops-java//dist/
+demo-devops-java//nbdist/
+demo-devops-java//.nb-gradle/
+demo-devops-java/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+demo-devops-java/.vscode/
