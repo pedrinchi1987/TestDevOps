@@ -1,0 +1,7 @@
+env                 = "{AMBIENTE}"
+region              = "{REGION}"
+access_key          = "{KEY}"
+secret_key          = "{SECRET}"
+habilitar_publica   = {PUBLICA}
+cantidad_instancias = {CANTIDAD}
+cantidad_zonas      = {ZONAS}

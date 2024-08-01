@@ -11,10 +11,13 @@ resource "aws_launch_template" "plantilla_instancia_web" {
     associate_public_ip_address = var.habilitar_publica
   }
 
-  instance_market_options {
-    market_type = "spot"
-    spot_options {
-      max_price = local.max_price
+  dynamic "instance_market_options" {
+    for_each = local.uso_spot ? [1] : []
+    content {
+      market_type = "spot"
+      spot_options {
+        max_price = local.max_price
+      }
     }
   }
 
