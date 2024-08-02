@@ -51,3 +51,6 @@ demo-devops-java/build/
 
 ### VS Code ###
 demo-devops-java/.vscode/
+
+Ambiente/Terraform/*.tfvars
+Ambiente/Terraform/.terraform*

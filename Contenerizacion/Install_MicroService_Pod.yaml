@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devsu
+spec:
+  selector:
+    matchLabels:
+      app: devsu
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: devsu
+    spec:
+      containers:
+      - name: devsu
+        image: pedrinchi1987/devsu:{VERSION}
+        #command: ["echo", "SUCCESS"]
+        ports:
+        - containerPort: 8000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: devsu-api-svc
+spec:
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 5001
+      targetPort: 8000
+  selector:
+    app: devsu
