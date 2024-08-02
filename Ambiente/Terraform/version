@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "s3-${var.env}-instancia-prmr"
-    key    = "/"
+    key    = "status/"
     region = var.region
   }
 }
