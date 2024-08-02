@@ -6,12 +6,10 @@ terraform {
     }
   }
 
-  cloud {
-    organization = "PruebaDevsu"
-
-    workspaces {
-      name = "devsu-state"
-    }    
+  backend "s3" {
+    bucket = "s3-${var.env}-instancia-prmr"
+    key    = "/"
+    region = var.region
   }
 }
 
