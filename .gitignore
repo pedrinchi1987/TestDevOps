@@ -54,3 +54,5 @@ demo-devops-java/.vscode/
 
 Ambiente/Terraform/*.tfvars
 Ambiente/Terraform/.terraform*
+**/vsts-agent-linux-x64-3.242.1.tar.gz
+**/.vagrant
