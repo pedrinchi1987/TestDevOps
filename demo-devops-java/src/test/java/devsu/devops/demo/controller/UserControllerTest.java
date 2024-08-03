@@ -19,6 +19,7 @@ public class UserControllerTest {
 	private MockMvc mockMvc;
 
 	private final String relativePath = "/users";
+    private final String relativePathGetID = "/users/{id}";
 
 	@Test
 	@DisplayName("GET: " + relativePath + ": ✔ Status code 200")
@@ -29,4 +30,14 @@ public class UserControllerTest {
 				)
 		.andExpect(status().isOk());
 	}
+
+    @Test
+    @DisplayName("GET: " + relativePathGetID + ": ✔ Status code 200")
+    void getUser_statusOk() throws Exception {
+        mockMvc.perform(
+                get(relativePathGetID, 1)
+                        .characterEncoding("utf-8")
+        )
+                .andExpect(status().isOk());
+    }
 }

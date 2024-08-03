@@ -78,7 +78,7 @@ Vagrant.configure("2") do |config|
     apt-get install -y apache2
   SHELL
   config.vm.provision "shell", path: '.\script\install_init_config.sh'
-  #config.vm.provision "shell", path: '.\script\script_agente.sh'
-  #config.vm.provision "shell", path: '.\script\login_terraform.sh'
+  config.vm.provision "shell", path: '.\script\install_agente.sh'
+  #config.vm.provision "shell", path: '.\script\config_login_terraform.sh'
   #config.vm.provision "shell", path: '.\script\install_containers.sh'
 end

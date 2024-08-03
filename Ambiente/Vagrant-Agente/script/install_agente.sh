@@ -5,16 +5,17 @@ echo "CREANDO AGENTE DE AZURE DEVOPS"
 
 mkdir myagent && cd myagent
 tar zxvf /vagrant_data/vsts-agent-linux-x64-3.242.1.tar.gz
-./config.sh <<EOF
-Y
-https://dev.azure.com/pedrito1348
-PAT
-{TOKEN_AZURE}
 
-PRMR
+#./config.sh <<EOF
+#Y
+#https://dev.azure.com/pedrito1348
+#PAT
+#TOKEN_AZURE
 
-EOF
+#PRMR
 
-./run.sh
+#EOF
+
+#./run.sh
 
 echo "FIN DE CREACION AGENTE DE AZURE DEVOPS"
