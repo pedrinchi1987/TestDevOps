@@ -24,17 +24,10 @@ echo "---------------- MINIKUBE ---------------------"
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
-
-#minikube start --extra-config=apiserver.service-node-port-range=5000-5009 --force
-
 newgrp docker
 
 #ESTOS COMANDOS HAY QUE EJECUTARLOS A MANO POSTERIOR A LA EJECUCION DE ESTE SCRIPT
-#minikube start
 #minikube start --extra-config=apiserver.service-node-port-range=5000-32767 --force
-
-#minikube service devsu-api-svc
-#kubectl port-forward --address=0.0.0.0 service/devsu-api-svc 5001:5001
 
 echo "FIN COMPONENTES CONTENEDORES"
 
