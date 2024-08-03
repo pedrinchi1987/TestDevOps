@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "INICIO CONFIGURACION TERRAFORM"
+
 terraform --version
 
 json='{
