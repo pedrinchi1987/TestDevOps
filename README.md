@@ -65,7 +65,7 @@ El agente se encuentra configurado y en linea
 
 d) También se penso en este agente ejecutar terraform de forma local con terraform cloud para guardar el estado, para esto necesitamos la configuración del script **.\script\config_login_terraform.sh**, ejecutarlo de manera manual lo que esta dentro del script ya que por diferentes razones solamente asi se crean las de configuraciones de terraform **.terraform.d**
 
-### 2) Pipelines IC
+## 2) Pipelines IC
 
 ### a) PIPELINE DevsuPrueba-Maven-CI
 
@@ -122,7 +122,7 @@ Se hizo una prueba para la ejecución del código terraform con el estado remoto
 ### Resultado de este Pipeline
 * Prueba de configuración con el estado de terraform en terraform cloud
 
-### 4) Pipelines CD
+## 3) Pipelines CD
 
 ### a) PIPELINE DevsuPrueba-CD
 
@@ -142,14 +142,44 @@ Publicar o Desplegar el contenedor de acuerdo a archivo generado y usando la pub
 
 ![image](https://github.com/user-attachments/assets/e2e7f9ad-22b0-442f-9a23-05a38716d17d)
 
-### 5) Ejecuciones
+## 4) Ejecuciones
 
+### Se ejecuta el pipeline de IC DevsuPrueba-Terraform-CI teniendo el siguiente resultado
 
+### Ejecucion de Tareas
+![image](https://github.com/user-attachments/assets/bfef9b3f-f0d1-4c3b-90bc-0516ae82caa5)
 
+### Publicación de Artefactos (Azure Pipeline)
+![image](https://github.com/user-attachments/assets/adb55df5-6874-40e7-84d4-de178c0d33cd)
+
+### Análisis Estático de Código
 ![image](https://github.com/user-attachments/assets/50b42c0e-9824-434e-9669-4f7b16eb7a00)
 
+Podemos aqui ver el cambio cuando existe mayor cobertura o cambios en los análisis
 ![image](https://github.com/user-attachments/assets/ed3181ee-be86-459e-8327-f22964b4b280)
 
+### Se ejecuta el pipeline de IC DevsuPrueba-Terraform-CI teniendo el siguiente resultado
+
+![image](https://github.com/user-attachments/assets/5a530f56-2819-4176-8bde-f43e5ebea388)
+
+![image](https://github.com/user-attachments/assets/95a16eb2-4f07-4dd3-b488-ed88e4d4c0ad)
+
+![image](https://github.com/user-attachments/assets/9685d2ad-7475-48c1-9d75-71d72295c567)
+
+![image](https://github.com/user-attachments/assets/bdcaa78a-682f-465a-b611-83c5c47f1d10)
+
+**Después de la Ejecución tenemos la infraestructura creada**
+
+![image](https://github.com/user-attachments/assets/504248e6-1f3d-4d0f-a2ea-bf696c71518c)
+
+![image](https://github.com/user-attachments/assets/2add01ac-da78-40ed-8878-603b42ee86b9)
+
+![image](https://github.com/user-attachments/assets/4b051ff4-c9ea-471c-8eec-8c8bcfbcabbf)
+
+![image](https://github.com/user-attachments/assets/4b542916-1a71-4bd1-bca8-a52f8e376921)
+
+
+### Se ejecuta el pipeline de CD DevsuPrueba-CD teniendo el siguiente resultado
 
 ![image](https://github.com/user-attachments/assets/98f01690-eda6-4365-bee0-15627e0197d9)
 

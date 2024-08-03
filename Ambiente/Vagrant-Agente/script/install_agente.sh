@@ -6,9 +6,10 @@ echo "CREANDO AGENTE DE AZURE DEVOPS"
 mkdir myagent && cd myagent
 tar zxvf /vagrant_data/vsts-agent-linux-x64-3.242.1.tar.gz
 
+#ESTOS COMANDOS HAY QUE EJECUTARLOS A MANO POSTERIOR A LA EJECUCION DE ESTE SCRIPT
 #./config.sh <<EOF
 #Y
-#https://dev.azure.com/pedrito1348
+#https://dev.azure.com/{ORGANIZACION}
 #PAT
 #TOKEN_AZURE
 
