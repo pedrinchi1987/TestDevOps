@@ -1,4 +1,4 @@
-# TestDevOps
+ TestDevOps
 Prueba Validacion DevOps develop
 
 Para esta Prueba se ha realizado lo siguiente:
@@ -185,4 +185,10 @@ Podemos aqui ver el cambio cuando existe mayor cobertura o cambios en los análi
 
 ![image](https://github.com/user-attachments/assets/467199b7-2670-4b51-8cca-f27a52a09121)
 
+## 5) Pipelines
 
+Los códigos de los pipeline estan en la carpeta pipeline en el proyecto
+
+El proyecto esta en https://dev.azure.com/****/DevsuPrueba
+
+Sin embargo no esta público por ser una cuenta propia si desean pedirme permiso por favor solicitarme
