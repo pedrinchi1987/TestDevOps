@@ -30,5 +30,7 @@ spec:
     - name: http
       port: 5001
       targetPort: 8000
+      nodePort: 5001
+      protocol: TCP
   selector:
     app: devsu
